@@ -1,0 +1,256 @@
+/* homepage grid */
+.homepageitem {
+    display:inline-block;
+    margin-top: 5%;
+    width:35% ;
+    height: 75%;
+    position: absolute;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1); 
+   
+}
+.homepageitem:hover
+{
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.10);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.10);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.10);
+    transition: all 200ms ease-in;
+    transform: scale(1.10);
+}
+
+/* planet start */ 
+.planet{
+    width:300px;
+    height:300px;
+    position:absolute;
+    border-radius:50%;
+    overflow:hidden;
+    box-shadow: 0 0 60px -20px darkslateblue, -14px -15px 40px -10px rgba(255, 238, 191, 0.23);
+    
+  }
+  .planet .mask{
+    width:100%;
+    height:100%;
+    position: absolute;
+    box-shadow:inset -10px -10px 40px #251303, inset 10px 10px 30px -10px darkslategrey;
+    border-radius:50%;
+  }
+  .planet .background{
+    animation: translateBackground 40s infinite linear;  
+    background:url("https://web.cortland.edu/flteach/civ/DavidWeb/images/fullmapb.jpg") repeat-x;
+    width:300px;
+    height:300px;
+    position:absolute;
+    border-radius:50%;
+  }
+  .planet2 .background{
+    animation: translateBackground 40s infinite linear;  
+    background:url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1b9285b2-fb2e-463b-b377-b97a21b29652/d5iigqu-8c00e615-b0c9-4123-9aa6-ae758de513bb.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvZi8xYjkyODViMi1mYjJlLTQ2M2ItYjM3Ny1iOTdhMjFiMjk2NTIvZDVpaWdxdS04YzAwZTYxNS1iMGM5LTQxMjMtOWFhNi1hZTc1OGRlNTEzYmIuanBnIn1dXX0.oT8Xd5NUmdurWJoflA6e6G8JpnFf6clUriGxPKkiP2Y") repeat-x;
+    background-size: auto;
+    width:300px;
+    height:300px;
+    position:absolute;
+    border-radius:50%;
+  }
+  .planet3 .background{
+    animation: translateBackground 40s infinite linear;  
+    background:url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F-2aLH6cYiaKs%2FTdOsBtnpRqI%2FAAAAAAAAAP4%2FbnMOdD9OMjk%2Fs1600%2Fmars%2Btexture.jpg&f=1&nofb=1") repeat-x;
+    width:300px;
+    height:300px;
+    position:absolute;
+    border-radius:50%;
+  }
+  .planet .clouds{
+    background:url(http://artem.anmedio.ru/dev/planet/clouds.png) repeat-x;
+    width:300px;
+    height:300px;
+    position:absolute;
+    border-radius:50%;
+    animation: translateBackground 30s infinite linear;
+    opacity: 0.4;
+  }
+  .planet2 .clouds{
+    background:url(http://artem.anmedio.ru/dev/planet/clouds.png) repeat-x;
+    width:300px;
+    height:300px;
+    position:absolute;
+    border-radius:50%;
+    animation: translateBackground 30s infinite linear;
+    opacity: 0.4;
+  }
+ 
+  .planet .wrap{
+    width:300px;
+    height:300px;
+    position:absolute;
+    border-radius:50%;
+    animation: rotatePlanet 150s infinite linear;  
+  }
+  @keyframes translateBackground{
+    0%{
+      background-position-x:0;
+    }
+    100%{
+      background-position-x:-600px;
+    }
+  }
+  /* menu start */ 
+
+ 
+ #menuToggle
+ {
+   display: block;
+   position: absolute;
+   top: 50px;
+   left: 50px;
+   
+   z-index: 1;
+   
+   -webkit-user-select: none;
+   user-select: none;
+ }
+ 
+ #menuToggle a
+ {
+   text-decoration: none;
+   color: #232323;
+   
+   transition: color 0.3s ease;
+ }
+ 
+ #menuToggle a:hover
+ {
+   color: tomato;
+ }
+ 
+ 
+ #menuToggle input
+ {
+   
+   width: 40px;
+   height: 32px;
+   position: absolute;
+   top: -7px;
+   left: -5px;
+   
+   cursor: pointer;
+   
+   opacity: 0; /* hide this */
+   z-index: 2; /* and place it over the hamburger */
+   
+   -webkit-touch-callout: none;
+ }
+ 
+
+ #menuToggle span
+ {
+   display: block;
+   width: 33px;
+   height: 4px;
+   margin-bottom: 5px;
+   position: relative;
+   
+   background: #cdcdcd;
+   border-radius: 3px;
+   
+   z-index: 1;
+   
+   transform-origin: 4px 0px;
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               opacity 0.55s ease;
+ }
+ 
+ #menuToggle span:first-child
+ {
+   transform-origin: 0% 0%;
+ }
+ 
+ #menuToggle span:nth-last-child(2)
+ {
+   transform-origin: 0% 100%;
+ }
+ 
+ 
+ #menuToggle input:checked ~ span
+ {
+   opacity: 1;
+   transform: rotate(45deg) translate(-2px, -1px);
+   background: #232323;
+ }
+ 
+ 
+ #menuToggle input:checked ~ span:nth-last-child(3)
+ {
+   opacity: 0;
+   transform: rotate(0deg) scale(0.2, 0.2);
+ }
+ 
+ 
+ #menuToggle input:checked ~ span:nth-last-child(2)
+ {
+   transform: rotate(-45deg) translate(0, -1px);
+ }
+ 
+
+ #menu
+ {
+   position: absolute;
+   width: 300px;
+   margin: -100px 0 0 -50px;
+   padding: 50px;
+   padding-top: 125px;
+   
+   background: #ededed;
+   list-style-type: none;
+   -webkit-font-smoothing: antialiased;
+   
+   
+   transform-origin: 0% 0%;
+   transform: translate(-100%, 0);
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+ }
+ 
+ #menu li
+ {
+   padding: 10px 0;
+   font-size: 22px;
+ }
+ 
+ #menuToggle input:checked ~ ul
+ {
+   transform: none;
+ }
+ 
+
+.backgroundclass {
+    background-color: black;
+     position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.dylanbozarth {
+    color: white;
+    text-align: center;
+    
+}
+.maintitle {
+    color: white;
+text-align: center;
+margin-left: -15%;
+
+}
