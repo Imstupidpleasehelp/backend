@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 const Home = () => (
   <Fragment>
     <div className="text-center">
-      <h1>LETS DO WEBPACK YEAHAHAHA</h1>
+      <h1 className="text-center">LETS DO WEBPACK YEAHAHAHA</h1>
       <div className="planet">
         <div className="wrap">
           <div className="background"></div>
