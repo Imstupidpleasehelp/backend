@@ -1,33 +1,5 @@
-/* homepage grid */
-.homepageitem {
-    display:inline-block;
-    margin-top: 5%;
-    width:35% ;
-    height: 75%;
-    position: absolute;
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1); 
-    -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1); 
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1);
-    transition: all 200ms ease-in;
-    transform: scale(1); 
-   
-}
-.homepageitem:hover
-{
-    box-shadow: 0px 0px 150px #000000;
-    z-index: 2;
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1.10);
-    -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.10);   
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1.10);
-    transition: all 200ms ease-in;
-    transform: scale(1.10);
-}
+@import "base/reset";
+@import "base/common";
 
 /* planet start */ 
 .planet{
@@ -105,18 +77,3 @@
       background-position-x:-600px;
     }
   }
-
-.backgroundclass {
-    background-color: black;
-     position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.maintitle {
-    color: white;
-text-align: center;
-margin-left: -15%;
-
-}
